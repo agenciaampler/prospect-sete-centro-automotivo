@@ -1,0 +1,41 @@
+{
+    "version": "1.0",
+    "site": "",
+    "business": {
+        "name": "Sete Centro Automotivo",
+        "type": "AutoRepair",
+        "address": "R. São Mateus, 29 - Portão, Curitiba - PR, 81070-080",
+        "areaServed": [
+            "Curitiba e regiao metropolitana"
+        ]
+    },
+    "actions": [
+        {
+            "id": "contact-whatsapp",
+            "name": "Falar pelo WhatsApp",
+            "description": "Inicia uma conversa no WhatsApp com a oficina para pedir orientação, orçamento ou agendamento.",
+            "method": "link",
+            "target": "#contato",
+            "parameters": {
+                "optional": [
+                    "vehicle_brand",
+                    "vehicle_model",
+                    "vehicle_year",
+                    "symptom"
+                ]
+            }
+        },
+        {
+            "id": "open-route",
+            "name": "Abrir rota no mapa",
+            "description": "Abre a localização da oficina no Google Maps para conferir endereço e rota.",
+            "method": "link",
+            "target": "https://maps.google.com/?cid=17076466239434722686&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA",
+            "parameters": {
+                "optional": [
+                    "origin"
+                ]
+            }
+        }
+    ]
+}
